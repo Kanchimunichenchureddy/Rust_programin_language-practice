@@ -1,0 +1,152 @@
+/* ============================================
+   Team Activity Styles
+   ============================================ */
+
+.activity-card {
+  padding: var(--space-6);
+}
+
+.activity-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.activity-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.activity-subtitle {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+/* ---- Live Indicator ---- */
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+/* ---- Timeline ---- */
+.timeline {
+  list-style: none;
+  position: relative;
+  margin-left: var(--space-3);
+}
+
+/* Vertical connecting line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 14px;
+  bottom: 4px;
+  width: 1px;
+  background: var(--line);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: var(--space-6);
+  padding-bottom: var(--space-5);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 4px solid var(--bg);
+  z-index: 1;
+}
+
+.timeline-content {
+  min-width: 0;
+}
+
+.timeline-avatar-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.timeline-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-action {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.timeline-action strong {
+  font-weight: 600;
+}
+
+.timeline-comment {
+  font-size: 12px;
+  color: var(--ink-2);
+  font-style: italic;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.timeline-context {
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 4px;
+}
+
+/* ---- Status Chips ---- */
+.chip-status-done {
+  background: #ecfdf5 !important;
+  color: #065f46 !important;
+  border-color: #a7f3d0 !important;
+  font-size: 10px !important;
+  padding: 2px 8px !important;
+}
+
+.chip-status-blocked {
+  background: #fffbeb !important;
+  color: #92400e !important;
+  border-color: #fde68a !important;
+  font-size: 10px !important;
+  padding: 2px 8px !important;
+}
+
+/* ---- Empty State ---- */
+.activity-empty {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  color: var(--ink-3);
+  font-size: 14px;
+}
+
+/* ---- Skeleton for activity ---- */
+.skeleton-dot {
+  background: var(--bg-2) !important;
+  animation: shimmer 1.5s ease-in-out infinite !important;
+}

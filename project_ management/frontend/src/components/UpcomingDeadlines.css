@@ -1,0 +1,111 @@
+/* ============================================
+   Upcoming Deadlines Styles
+   ============================================ */
+
+.deadlines-card {
+  padding: var(--space-6);
+}
+
+.deadlines-header {
+  margin-bottom: var(--space-5);
+}
+
+.deadlines-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.deadlines-subtitle {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+/* ---- Deadline List ---- */
+.deadlines-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.deadline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+/* ---- Date Block ---- */
+.deadline-date {
+  width: 48px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.deadline-month {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-3);
+  line-height: 1.2;
+}
+
+.deadline-day {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+.deadline-weekday {
+  font-size: 10px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+/* ---- Event Details ---- */
+.deadline-details {
+  flex: 1;
+  border-left: 1px solid var(--line);
+  padding-left: var(--space-3);
+  min-width: 0;
+}
+
+.deadline-urgent-border {
+  border-left-width: 2px;
+  border-left-color: var(--accent);
+}
+
+.deadline-event-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.deadline-event-time {
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.deadline-attendees {
+  margin-top: var(--space-2);
+}
+
+/* ---- Calendar Button ---- */
+.calendar-btn {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--space-5);
+  background: #fff;
+  border-color: var(--line);
+}
+
+/* ---- Urgent Text Color ---- */
+.urgent-text {
+  color: var(--accent);
+}

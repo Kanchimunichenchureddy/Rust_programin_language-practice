@@ -1,0 +1,42 @@
+[package]
+name = "projecthub-backend"
+version = "0.1.0"
+edition = "2021"
+description = "ProjectHub — Rust backend with WebSocket IPC, MySQL, and Tokio"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# WebSocket server (IPC over TCP)
+tokio-tungstenite = "0.24"
+futures-util = "0.3"
+
+# Database
+sqlx = { version = "0.8", features = ["runtime-tokio", "mysql", "chrono"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Unique IDs for request tracking
+uuid = { version = "1", features = ["v4"] }
+
+# Password hashing
+bcrypt = "0.16"
+
+# Date/time handling
+chrono = { version = "0.4", features = ["serde"] }
+
+# Environment variables
+dotenvy = "0.15"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Error handling
+thiserror = "2"
+
+# Async helpers
+tokio-stream = "0.1"

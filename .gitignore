@@ -1,1 +1,25 @@
-/target
+# Rust build artifacts
+**/target/
+
+# Node/JavaScript dependencies & build outputs
+**/node_modules/
+**/dist/
+**/build/
+
+# Environment variables (contains sensitive secrets)
+**/.env
+**/.env.*
+!**/.env.example
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

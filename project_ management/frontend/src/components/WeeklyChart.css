@@ -1,0 +1,88 @@
+/* ============================================
+   Weekly Chart Styles
+   ============================================ */
+
+.chart-card {
+  padding: var(--space-6);
+}
+
+.chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.chart-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.chart-subtitle {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+
+/* ---- Range Tabs ---- */
+.chart-tabs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--bg-2);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+}
+
+.chart-tab {
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+}
+
+/* ---- Legend ---- */
+.chart-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+  font-size: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-dot-completed {
+  background: var(--ink);
+}
+
+.legend-dot-planned {
+  background: var(--accent);
+}
+
+.legend-count {
+  color: var(--ink-3);
+}
+
+/* ---- SVG Chart ---- */
+.chart-svg-container {
+  position: relative;
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
